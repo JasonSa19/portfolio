@@ -13,6 +13,8 @@ const Header = ({ pageDest, pageDestSnd }) => {
         <ul>
           <li>
             <Link to={pageDest}>Start</Link>
+          </li>
+          <li>
             <Link to={pageDestSnd}>Über mich</Link>
           </li>
         </ul>
