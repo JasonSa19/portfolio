@@ -1,7 +1,14 @@
 // Import react for jsx syntax
 import * as React from "react";
+
+// Import main-style
 import "./style/main.sass";
 
+// Import header Component
+import header from "./components/header.js";
+
+// init header Component
+header = () => {};
 // Init first Component
 const IndexPage = () => {
   return (
