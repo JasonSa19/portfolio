@@ -1,11 +1,19 @@
 import * as React from "react";
+import { Link } from "gatsby";
 
-const pageHeader = () => {
+const Header = () => {
   return (
     <header>
-      <mainMenu />
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Start</Link>
+            <Link to="/about">Über mich</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };
 
-export default pageHeader;
+export default Header;

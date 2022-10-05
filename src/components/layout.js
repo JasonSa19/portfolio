@@ -1,17 +1,21 @@
 // Import required assets and packages
-import { React } from "react";
+import * as React from "react";
+import { Link } from "gatsby";
+
+import Header from "./Header";
 
 // Init Components
+
 const Layout = ({ pageTitle, children }) => {
   return (
-    <html lang="de">
+    <section>
+      <Header />
       <main>
         <h1>{pageTitle}</h1>
         {children}
       </main>
-    </html>
+    </section>
   );
 };
 
-// Export Component
 export default Layout;
