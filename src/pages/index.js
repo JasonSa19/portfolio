@@ -17,5 +17,4 @@ const IndexPage = () => {
 export const Head = () => <title>Jason S. | Front-End Developer</title>;
 
 // export first Component
-
 export default IndexPage;

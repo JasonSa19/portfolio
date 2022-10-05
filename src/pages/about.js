@@ -1,5 +1,7 @@
+// Import react for jsx syntax
 import * as React from "react";
 
+// Init aboutPage Component
 const AboutPage = () => {
   return (
     <main>
@@ -12,6 +14,8 @@ const AboutPage = () => {
     </main>
   );
 };
-
+// Export Title to Head
 export const Head = () => <title>Jason S. | Über mich</title>;
+
+// export aboutPage Component
 export default AboutPage;
