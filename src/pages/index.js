@@ -1,12 +1,8 @@
-// Import react for jsx syntax
+// Import required assets and packages
 import * as React from "react";
-
-// Import main-style
 import "../styles/main.sass";
 
-// Import header and footer Componen
-
-// Init first Component
+// Init Components
 const IndexPage = () => {
   return (
     <body>
@@ -23,5 +19,5 @@ const IndexPage = () => {
 // Export Title to Head
 export const Head = () => <title>Jason S. | Front-End Developer</title>;
 
-// export first Component
+// export Component
 export default IndexPage;
