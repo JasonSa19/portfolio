@@ -4,21 +4,24 @@ import * as React from "react";
 // Import main-style
 import "./style/main.sass";
 
-// Import header Component
+// Import header and footer Component
 import pageHeader from "./components/pageHeader";
+import pageFooter from "./components/pageFooter";
 
 // Init first Component
-const IndexPage = () => {
+const IndexPage = (pageFooter, pageHeader) => {
   return (
     <>
-      <header />
-      <main>
-        <div className="main-wrap">
-          <h1>Portfolio</h1>
-          <h2>Personal Portfolio Test-seite</h2>
-        </div>
-      </main>
-      <footer />
+      <body>
+        <pageHeader />
+        <main>
+          <div className="main-wrap">
+            <h1>Portfolio</h1>
+            <h2>Personal Portfolio Test-seite</h2>
+          </div>
+        </main>
+        <pageFooter />
+      </body>
     </>
   );
 };
