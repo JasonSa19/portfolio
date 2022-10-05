@@ -2,11 +2,11 @@
 import * as React from "react";
 
 // Import main-style
-import "./style/main.sass";
+import "../styles/main.sass";
 
 // Import header and footer Component
-import pageHeader from "./components/pageHeader";
-import pageFooter from "./components/pageFooter";
+import pageHeader from "../components/pageHeader";
+import pageFooter from "../components/pageFooter";
 
 // Init first Component
 const IndexPage = (pageFooter, pageHeader) => {
