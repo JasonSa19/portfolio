@@ -1,14 +1,19 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-const Header = () => {
+import Logo from "../images/Logo.svg";
+
+const Header = ({ pageDest, pageDestSnd }) => {
   return (
     <header>
+      <div className="logo-wrap">
+        <img src={Logo} alt="logo" />
+      </div>
       <nav>
         <ul>
           <li>
-            <Link to="/">Start</Link>
-            <Link to="/about">Über mich</Link>
+            <Link to={pageDest}>Start</Link>
+            <Link to={pageDestSnd}>Über mich</Link>
           </li>
         </ul>
       </nav>

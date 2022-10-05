@@ -10,7 +10,7 @@ import Layout from "../components/Layout";
 const IndexPage = () => {
   return (
     <>
-      <Header />
+      <Header pageDest={"/"} pageDestSnd={"/about"} />
       <Layout pageTitle={"Portfolio-Seite"}>
         <p>Das ist meine Portfolio-Seite in the Making</p>
       </Layout>
