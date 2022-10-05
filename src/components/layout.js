@@ -1,26 +1,15 @@
 // Import required assets and packages
-import * as React from "react";
-import { Link } from "gatsby";
+import { React } from "react";
 
 // Init Components
 const Layout = ({ pageTitle, children }) => {
   return (
-    <section>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Start</Link>
-          </li>
-          <li>
-            <Link to="/about">Über mich</Link>
-          </li>
-        </ul>
-      </nav>
+    <html lang="de">
       <main>
         <h1>{pageTitle}</h1>
         {children}
       </main>
-    </section>
+    </html>
   );
 };
 
