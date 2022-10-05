@@ -3,7 +3,6 @@ import * as React from "react";
 import { Link } from "gatsby";
 
 // Init Components
-
 const Layout = ({ pageTitle, children }) => {
   return (
     <section>
@@ -25,4 +24,5 @@ const Layout = ({ pageTitle, children }) => {
   );
 };
 
+// Export Component
 export default Layout;

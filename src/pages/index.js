@@ -2,17 +2,14 @@
 import * as React from "react";
 import "../styles/main.sass";
 
+import Layout from "../components/layout";
+
 // Init Components
 const IndexPage = () => {
   return (
-    <body>
-      <main>
-        <div className="main-wrap">
-          <h1>Portfolio</h1>
-          <h2>Personal Portfolio Test-seite</h2>
-        </div>
-      </main>
-    </body>
+    <Layout pageTitle={"Portfolio-Seite"}>
+      <p>Das ist meine Portfolio-Seite in the Making</p>
+    </Layout>
   );
 };
 
