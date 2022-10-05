@@ -5,19 +5,21 @@ import * as React from "react";
 import "./style/main.sass";
 
 // Import header Component
-import header from "./components/header.js";
+import pageHeader from "./components/pageHeader";
 
-// init header Component
-header = () => {};
 // Init first Component
 const IndexPage = () => {
   return (
-    <main>
-      <div className="main-wrap">
-        <h1>Portfolio</h1>
-        <h2>Personal Portfolio Test-seite</h2>
-      </div>
-    </main>
+    <>
+      <header />
+      <main>
+        <div className="main-wrap">
+          <h1>Portfolio</h1>
+          <h2>Personal Portfolio Test-seite</h2>
+        </div>
+      </main>
+      <footer />
+    </>
   );
 };
 
