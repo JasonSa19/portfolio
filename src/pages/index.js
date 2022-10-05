@@ -1,5 +1,6 @@
 // Import react for jsx syntax
 import * as React from "react";
+import "./style/main.sass";
 
 // Init first Component
 const IndexPage = () => {
