@@ -1,9 +1,10 @@
 header
-  width: 100%
-  display: flex
-  align-items: center
-  justify-content: space-between
-  @include container
+  .header-wrap
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    @include container
 
   nav
     ul
@@ -16,10 +17,8 @@ header
       li
         a
           text-decoration: none
-          text-transform: uppercase
-          font-weight: 600
+          font-weight: 400
 
   .logo-wrap
     svg
-      width: 6 * $base-width
-      fill: $primary
+      width: 8 * $base-width

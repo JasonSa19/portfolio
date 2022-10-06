@@ -6,19 +6,24 @@ import Logo from "./Logo";
 const Header = ({ pageDest, pageDestSnd }) => {
   return (
     <header>
-      <div className="logo-wrap">
-        <Logo />
+      <div class="header-wrap">
+        <div className="logo-wrap">
+          <Logo />
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <Link to={pageDest}>Start</Link>
+            </li>
+            <li>
+              <Link to={pageDestSnd}>Über mich</Link>
+            </li>
+            <li>
+              <Link to={pageDestSnd}>Kenntnisse</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <Link to={pageDest}>Start</Link>
-          </li>
-          <li>
-            <Link to={pageDestSnd}>Über mich</Link>
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 };

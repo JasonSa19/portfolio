@@ -1,5 +1,9 @@
 @mixin container
     max-width: $mobile
     margin: $center
-    @media (min-width: #{$l})
+    @media (min-width: #{$xxl})
       max-width: $full
+
+@mixin gradient-bg
+    background: rgb(42,42,42)
+    background: linear-gradient(90deg, rgba(42,42,42,1) 0%, rgba(58,58,58,1) 100%)
