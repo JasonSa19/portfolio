@@ -3,24 +3,28 @@ import { Link } from "gatsby";
 
 import Logo from "./Logo";
 
-const Header = ({ pageDest, pageDestSnd }) => {
+const Header = () => {
+  const NavItems = [
+    { item: "Start", slug: "start" },
+    { item: "Über mich", slug: "about" },
+    { item: "Kenntnisse", slug: "knowledge" },
+    { item: "Kontakt", slug: "kontakt" },
+  ];
   return (
     <header>
       <div class="header-wrap">
-        <div className="logo-wrap">
+        <Link to="/" className="logo-wrap">
           <Logo />
-        </div>
+        </Link>
         <nav>
           <ul>
-            <li>
-              <Link to={pageDest}>Start</Link>
-            </li>
-            <li>
-              <Link to={pageDestSnd}>Über mich</Link>
-            </li>
-            <li>
-              <Link to={pageDestSnd}>Kenntnisse</Link>
-            </li>
+            {NavItems.map((el) => (
+              <li>
+                <a key={el.slug} className="nav-link" href={`#${el.slug}`}>
+                  {el.item}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
