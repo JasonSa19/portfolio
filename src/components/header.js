@@ -1,8 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import Logo from "./Logo";
-
 const Header = () => {
   const NavItems = [
     { item: "Start", slug: "start" },
@@ -13,9 +11,7 @@ const Header = () => {
   return (
     <header>
       <div class="header-wrap">
-        <Link to="/" className="logo-wrap">
-          <Logo />
-        </Link>
+        <Link to="/" className="logo-wrap"></Link>
         <nav>
           <ul>
             {NavItems.map((el) => (
