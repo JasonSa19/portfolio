@@ -1,8 +1,7 @@
 import React from "react";
-import Headline from "../Headline";
 
 const Herosection = () => {
-  return <Headline></Headline>;
+  return <h1></h1>;
 };
 
 export default Herosection;
