@@ -1,5 +1,6 @@
 import * as React from "react";
 import Button from "./Button";
+import Hover from "./Hover";
 
 const Header = () => {
   const NavItems = [
@@ -17,6 +18,7 @@ const Header = () => {
                 <a key={el.slug} className="nav-link" href={`#${el.slug}`}>
                   {el.item}
                 </a>
+                <Hover />
               </li>
             ))}
           </ul>
