@@ -1,6 +1,6 @@
 // Import required assets and packages
 import * as React from "react";
-import Herosection from "./Sections/Herosection";
+import Herosection from "./Herosection";
 
 // Init Components
 
