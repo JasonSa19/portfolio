@@ -1,8 +1,7 @@
 import * as React from "react";
 
-const HeadlineType = `h${this.props.level}`;
-
-const Headline = ({ headlineContent }) => {
+const Headline = ({ headlineContent, type }) => {
+  const HeadlineType = `h${this.props.type}`;
   return <HeadlineType>{headlineContent}</HeadlineType>;
 };
 

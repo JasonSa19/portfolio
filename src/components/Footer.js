@@ -5,17 +5,20 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="footer-menu"></div>
-      <ul>
-        <li>
-          {footerMenu.map((item) => (
-            <a key={item.slag} href={`#${item.slag}`}>
-              {item.navTitle}
-            </a>
-          ))}
-        </li>
-      </ul>
-      <span>Erstellt {new Date().getFullYear()}</span>
+      <div className="footer-wrap">
+        <div className="footer-menu">
+          <ul>
+            <li>
+              {footerMenu.map((item) => (
+                <a key={item.slag} href={`${item.slag}`}>
+                  {item.navTitle}
+                </a>
+              ))}
+            </li>
+          </ul>
+        </div>
+        <span>{new Date().getFullYear()} - Jason Sauerwald</span>
+      </div>
     </footer>
   );
 };
