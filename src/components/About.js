@@ -7,6 +7,7 @@ const About = () => {
         <h2>
           <strong>über&nbsp;</strong>mich<strong>.</strong>
         </h2>
+        <h3>Hey!</h3>
       </div>
     </section>
   );

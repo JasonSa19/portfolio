@@ -25,13 +25,14 @@ section.hero
           transition: $transition
 
   .start-image
+    height: $section-height
     position: absolute
     right: 0
     top: 0
     z-index: 0
   
   .nextup-arrow--herosection
-    top: 100.8rem
+    top: $section-height - 5 * $base-width
     position: absolute
     animation-name: nextuparrow
     animation-iteration-count: infinite
