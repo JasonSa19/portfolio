@@ -1,12 +1,13 @@
 section.hero
+  @include section-height
   @include container
   
   .main-headline-wrap
-    padding-top: 15.8 * $base-width
+    padding-top: 15.8 * $base-width + $header-height
     width: 45%
 
     h1
-      margin-bottom: 3.2 * $base-width
+      margin: 0 0 3.2 * $base-width 0
 
     .icon-wrap
       display: flex

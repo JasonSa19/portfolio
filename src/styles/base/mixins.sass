@@ -1,8 +1,11 @@
 @mixin container
-    max-width: $mobile
-    margin: $center
-    @media (min-width: #{$xxl})
-      max-width: $full
+    max-width: $full
+    @media (max-width: #{$xxl})
+      max-width: $mobile
+      margin: $center
+
+@mixin section-height
+  height: $section-height
 
 @mixin gradient-bg
     background: rgb(42,42,42)
