@@ -13,13 +13,25 @@ section.hero
       flex-direction: row
       gap: 2 * $base-width
 
-      img
-        width: 3.5 * $base-width
-        height: auto
-        fill: $primary
+      a
+        transition: $transition
+        img
+          width: 3.5 * $base-width
+          height: auto
+          fill: $primary
+        &:hover
+          transform: translateY(-0.5rem)
+          transition: $transition
 
   .start-image
     position: absolute
     right: 0
     top: 0
     z-index: 0
+  
+  .nextup-arrow--herosection
+    top: 100.8rem
+    position: absolute
+    animation-name: nextuparrow
+    animation-iteration-count: infinite
+    animation-duration: .3s
