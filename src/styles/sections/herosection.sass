@@ -1,9 +1,22 @@
 section.hero
   @include container
   
-  h1
+  .main-headline-wrap
     padding-top: 15.8 * $base-width
     width: 45%
+
+    h1
+      margin-bottom: 3.2 * $base-width
+
+    .icon-wrap
+      display: flex
+      flex-direction: row
+      gap: 2 * $base-width
+
+      img
+        width: 3.5 * $base-width
+        height: auto
+        fill: $primary
 
   .start-image
     position: absolute
